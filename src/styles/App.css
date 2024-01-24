@@ -1,7 +1,7 @@
 
 .cityList{
-    width: 300px;
-    height: 400px;
+    width: 270px;
+    max-height: 400px;
     /* background-color: antiquewhite; */
     overflow-y: scroll;
     display: flex;
@@ -12,18 +12,19 @@ input{
     width:300px;
     padding: 8px;
 }
-.cityP{
+.cityLi{
     padding: 8px;
     /* background-color: aqua; */
-    margin: none
+    margin: none;
+    list-style-type: none;
 
 }
 
-.cityP:hover{
+.cityLi:hover{
     background-color: green;
     color: yellow;
     
 }
-.cityP:active{
+.cityLi:active{
     transform: scale(1,1.1);
 }

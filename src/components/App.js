@@ -2,7 +2,7 @@
 import React, {useState} from "react";
 import './../styles/App.css';
 import SearchCities from "./SearchCities";
-import DisplaySuggestions from "./DisplaySuggestions";
+import AutoComplete from "./AutoComplete";
 
 const App = () => {
   const [suggestions, setSuggestions]= useState([]);
@@ -14,7 +14,7 @@ const App = () => {
         {/* Do not remove the main div */}
         <h1>Search cities of India:</h1>
         <SearchCities suggestions={suggestions} setSuggestions={setSuggestions} formValue={formValue} setFormValue={setFormValue} />
-        {suggestions && <DisplaySuggestions  suggestions={suggestions} setFormValue= {setFormValue}/>}
+        {suggestions && <AutoComplete  suggestions={suggestions} setFormValue= {setFormValue}/>}
     </div>
   )
 }
